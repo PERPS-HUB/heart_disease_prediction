@@ -22,7 +22,7 @@ if st.button('predict'):
     prediction = model.predict(X_scaled)
     st.success(f"Prediction: {prediction[0]}")
 
-if prediction[0] ==1:
+if prediction[0] == 1:
     st.warning("You may have heart disease. Please consult a doctor.")
 else:
     st.success("You are likely to be healthy. Keep up the good work!")
